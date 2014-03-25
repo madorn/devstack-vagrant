@@ -3,8 +3,9 @@
 
 devstack_source_repo: https://github.com/openstack-dev/devstack.git
 devstack_source_dir: /home/vagrant/devstack
-openstack_milestone: master
+devstack_release: master
 
+openstack_milestone: master
 keystone_release: "{{ openstack_milestone }}"
 glance_release: "{{ openstack_milestone }}"
 neutron_release: "{{ openstack_milestone }}"

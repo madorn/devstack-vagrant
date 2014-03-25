@@ -2,7 +2,8 @@
 # file: roles/devstack/tasks/main.yml
 
 - name: ensure the devstack source is present
-  git: repo={{ devstack_source_repo }} dest={{ devstack_source_dir }}
+  git: repo={{ devstack_source_repo }} dest={{ devstack_source_dir }} version={{ devstack_release }}
+  ignore_errors: yes # needed because the git module makes incorrect assumptions about bare repositories
 
 - name: ensure the devstack configuration file is present
   template: src=local.conf.j2 dest={{ devstack_source_dir }}/local.conf
