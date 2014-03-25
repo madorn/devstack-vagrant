@@ -1,0 +1,29 @@
+---
+# file: group_vars/all
+
+devstack_source_repo: https://github.com/openstack-dev/devstack.git
+devstack_source_dir: /home/vagrant/devstack
+openstack_milestone: master
+
+keystone_release: "{{ openstack_milestone }}"
+glance_release: "{{ openstack_milestone }}"
+neutron_release: "{{ openstack_milestone }}"
+nova_release: "{{ openstack_milestone }}"
+cinder_release: "{{ openstack_milestone }}"
+horizon_release: "{{ openstack_milestone }}"
+ceilometer_release: "{{ openstack_milestone }}"
+heat_release: "{{ openstack_milestone }}"
+marconi_release: "{{ openstack_milestone }}"
+swift_release: master
+
+install_dir: /opt/stack
+log_file: "{{ install_dir }}/logs/stack.sh.log"
+admin_password: "password"
+database_password: "{{ admin_password }}"
+rabbit_password: "{{ admin_password }}"
+service_token: "{{ admin_password }}"
+service_password: "{{ admin_password }}"
+
+fixed_ip_range: "172.31.1.0/24"
+floating_ip_range: "192.168.200.0/25"
+host_ip: "{{ hostvars['devstack']['ansible_eth1']['ipv4']['address'] }}"

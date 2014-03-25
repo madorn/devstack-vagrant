@@ -1,0 +1,7 @@
+- name: setup devstack nodes
+  hosts: all
+  gather_facts: yes
+  sudo: no
+  roles:
+    - common
+    - devstack
