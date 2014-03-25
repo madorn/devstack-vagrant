@@ -33,4 +33,4 @@ Once configured, connect to the vagrant instance.
 
 Development has occurred on the following platforms:
 
-* Ubuntu 12.04 (Precise)
+* Ubuntu 12.04 LTS (Precise)
