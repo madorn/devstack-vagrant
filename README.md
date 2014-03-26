@@ -6,9 +6,9 @@ Ansible playbook to setup a DevStack environment using Vagrant.
 
 The following tools need to be in place for a working environment.
 
-* VirtualBox
-* Vagrant
-* Ansible
+* VirtualBox 4.3.8
+* Vagrant 1.3.5
+* Ansible 1.5.3
 
 
 ### Environment
