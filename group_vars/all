@@ -3,19 +3,16 @@
 
 devstack_source_repo: https://github.com/openstack-dev/devstack.git
 devstack_source_dir: /home/vagrant/devstack
-devstack_release: master
+devstack_release: stable/grizzly
 
-openstack_milestone: master
+openstack_milestone: stable/grizzly
 keystone_release: "{{ openstack_milestone }}"
 glance_release: "{{ openstack_milestone }}"
 neutron_release: "{{ openstack_milestone }}"
 nova_release: "{{ openstack_milestone }}"
 cinder_release: "{{ openstack_milestone }}"
 horizon_release: "{{ openstack_milestone }}"
-ceilometer_release: "{{ openstack_milestone }}"
-heat_release: "{{ openstack_milestone }}"
-marconi_release: "{{ openstack_milestone }}"
-swift_release: master
+swift_release: stable/grizzly
 
 install_dir: /opt/stack
 log_file: "{{ install_dir }}/logs/stack.sh.log"
