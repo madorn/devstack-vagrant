@@ -21,3 +21,8 @@ HORIZON_BRANCH={{ horizon_release }}
 CEILOMETER_BRANCH={{ ceilometer_release }}
 HEAT_BRANCH={{ heat_release }}
 SWIFT_BRANCH={{ keystone_release }}
+
+ENABLED_SERVICES+=,heat,h-api,h-api-cfn,h-api-cw,h-eng
+
+ENABLED_SERVICES+=,ceilometer-acompute,ceilometer-acentral,ceilometer-collector,ceilometer-api
+ENABLED_SERVICES+=,ceilometer-alarm-notifier,ceilometer-alarm-evaluator
